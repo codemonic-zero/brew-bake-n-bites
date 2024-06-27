@@ -1,14 +1,18 @@
 .first-section{
-    height: 100vh;
-    width: 100vw;
     background-image: url('../images/menu-items/brew-bake-n-bites.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+/* Header menu font style */
 .playwrite-us-trad{
     font-family: "Playwrite US Trad", cursive;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: oblique;
   }
+
+.menu-card{
+    height: 400px;
+    width: 300px;
+}
