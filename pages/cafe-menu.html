@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,29 +10,95 @@
     <meta name="description" content="Explore our delicious cafe menu with a variety of options.">
     <meta name="keywords" content="Cafe, Menu, Food, Drinks">
     <meta name="author" content="Cafe Name">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../style/menu-items.css"> <!-- External CSS file -->
 </head>
 
-<body>
-    <section class="first-section container mt-3 border rounded-4 object-fit-cover">
-        <header>
-            <nav class="d-flex justify-content-between align-items-center">
-                <div class="logo ">
-                    <img src="path/to/logo.png" alt="Cafe Logo" style="height: 50px;">
+<body class="first-section">
+    <section class="rounded-4">
+        <header class="mx-5 my-5 mt-0 mb-0 rounded-4 ">
+            <nav class="d-flex justify-content-between align-items-center row">
+                <div class="logo col-3">
+                    <img src="../images/menu-items/logo-name.gif" alt="Cafe Name" style="height: 15ch;">
+                    <!-- Added image for the logo name-->
                 </div>
-                
-                <div class="search-bar mt-3 mb-2">
+
+                <!-- <div class="search-bar mt-3 mb-2">
                     <input type="text" class="form-control" placeholder="Search...">
+                </div> -->
+                <div class="col-1"></div>
+                <div class="col-3">
+                    <form class="w-100 me-3" role="search">
+                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                    </form>
                 </div>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+
+                <div class="col-4">
+                    <ul class="nav justify-content-center playwrite-us-trad">
+                        <li class="nav-item"><a class="nav-link text-warning" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-bg-warning border rounded-2" href="cafe-menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link text-warning" href="#our-specialty">Our Specialty</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-warning" href="#whats-new">What's New</a></li>
+                    </ul>
+                </div>
+                <div class="col-1 playwrite-us-trad">
+                    <button class="btn btn-outline-warning btn-lg">
+                        <a class="nav-link" href="#login">Login
+                            <i class='bx bx-log-in'></i>
+                        </a>
+                    </button>
+                </div>
             </nav>
         </header>
-        <div class="hero">
+
+        <!-- Carousel starts here -->
+        <!-- <div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <img src="../images/menu-items/1st-cursol.png" class="d-block w-75" alt="First slide">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="../images/menu-items/brew-bake-n-bites.png" class="d-block w-75" alt="Second slide">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="../images/menu-items/1st-cursol.png" class="d-block w-75" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <div class="carousel-item">
+                <img src="../images/menu-items/1st-cursol.png" class="w-75 h-75" alt="Third slide">
+            </div>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div> -->
+        <!-- Carousel ends here -->
+        <div class="hero text-light">
             <h1>Welcome to Brew, Bake'n Bites</h1>
             <p>Discover our delicious menu</p>
             <a href="#menu" class="btn btn-primary">Explore Menu</a>
