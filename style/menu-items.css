@@ -1,18 +1,89 @@
-.first-section{
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first-section {
     background-image: url('../images/menu-items/brew-bake-n-bites.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-/* Header menu font style */
-.playwrite-us-trad{
-    font-family: "Playwrite US Trad", cursive;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: oblique;
-  }
 
-.menu-card{
-    height: 400px;
+/* Header menu font style */
+
+.varela-round-regular {
+    font-family: "Varela Round", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: larger;
+
+}
+
+.menu-card {
+    height: 425px;
     width: 300px;
+}
+
+.menu-card .card-image,
+.menu-card #card-title,
+.menu-card #card-price,
+.menu-card #card-description {
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover  {
+    transform: scale(1.1);
+}
+.card-image {
+    height: 250px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#burger-1 {
+    background-image: url('../images/menu-items/snacks/burger-1.jpg');
+}
+
+#sandwich-1 {
+    background-image: url('../images/menu-items/snacks/sandwich-1.jpg');
+}
+
+#pasta-1 {
+    background-image: url('../images/menu-items/snacks/pasta-1.jpg');
+}
+
+#pizza-1 {
+    background-image: url('../images/menu-items/snacks/pizza-1.jpg');
+}
+
+#coffee-1 {
+    background-image: url('../images/menu-items/beverages/coffee-1.png');
+}
+
+#milk-shake-1 {
+    background-image: url('../images/menu-items/beverages/milk-shake-1.png');
+}
+
+#ice-tea-1 {
+    background-image: url('../images/menu-items/beverages/ice-tea-1.png');
+}
+
+#cold-drinks {
+    background-image: url('../images/menu-items/beverages/cold-drinks.png');
+}
+
+#card-title,
+#card-price,
+#card-description {
+    padding: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+strong {
+    font-size: 0.6em;
 }

@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=varela-round-regular:wght@400..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=varela-round-regular:wght@400..700&family=Varela+Round&display=swap"
+        rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../style/menu-items.css"> <!-- External CSS file -->
 </head>
@@ -26,10 +31,6 @@
                         <img src="../images/menu-items/logo-name.gif" alt="Cafe Name" style="height: 15ch;">
                         <!-- Added image for the logo name-->
                     </div>
-
-                    <!-- <div class="search-bar mt-3 mb-2">
-                    <input type="text" class="form-control" placeholder="Search...">
-                </div> -->
                     <div class="col-1"></div>
                     <div class="col-3">
                         <form class="w-100 me-3" role="search">
@@ -38,16 +39,16 @@
                     </div>
 
                     <div class="col-4">
-                        <ul class="nav justify-content-center playwrite-us-trad">
+                        <ul class="nav justify-content-center varela-round-regular">
                             <li class="nav-item"><a class="nav-link text-warning" href="../index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="cafe-menu.html">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="cafe-menu.html">Menu</a></li>
                             <li class="nav-item"><a class="nav-link text-warning" href="#our-specialty">Our
                                     Specialty</a>
                             </li>
                             <li class="nav-item"><a class="nav-link text-warning" href="#whats-new">What's New</a></li>
                         </ul>
                     </div>
-                    <div class="col-1 playwrite-us-trad">
+                    <div class="col-1 varela-round-regular">
                         <button class="btn btn-outline-warning btn-lg">
                             <a class="nav-link" href="#login">Login
                                 <i class='bx bx-log-in'></i>
@@ -58,113 +59,36 @@
             </header>
         </section>
     </div>
-    <div class="mx-5 p-5 shadow-lg bg-dark">
-        <section class="row  justify-content-between">
+
+    <div class="mx-5 p-5 shadow-lg bg-dark rounded-1 bg-opacity-50">
+        <section class="row justify-content-lg-evenly" id="snacks-container">
+            <!-- Snacks Section-->
             <div class="col-12">
-                <h1 class="text-warning bg-black pt-2 pb-2 playwrite-us-trad text-center">Food's</h1>
-                <h2 class="text-warning playwrite-us-trad bg-gradient px-5 pt-3 pb-3 ">Snacks</h2>
-            </div>
-            <div class="menu-card bg-black shadow-lg col-3">
-            </div>
-            <div class="menu-card bg-black shadow-lg col-3">
-            </div>
-            <div class="menu-card bg-black shadow-lg col-3">
-            </div>
-            <div class="menu-card bg-black shadow-lg col-3">
-            </div>
-        </section>
-        <section class="row mt-5 mb-xxl-5 justify-content-around">
-            <div class="menu-card bg-warning shadow-lg col-3">
-            </div>
-            <div class="menu-card bg-warning shadow-lg col-3">
-            </div>
-            <div class="menu-card bg-warning shadow-lg col-3">
-            </div>
-            <div class="menu-card bg-warning shadow-lg col-3">
+                <h1 class="text-warning pt-2 pb-2 varela-round-regular text-center text-uppercase font-weight-bolder">
+                    Food's</h1>
+                <h2
+                    class="text-warning rounded-1 text-center bg-gradient mt-3 text-uppercase font-monospace border-opacity-75 mx-5 mb-3 varela-round-regular pt-3 pb-3 ">
+                    Snacks
+                </h2>
+                <h6 class="text-white text-end font-monospace border-opacity-75 text-decoration-underline px-5 pb-3">
+                    <a class="text-light" href="snacks.html">View All</a>
+                </h6>
             </div>
         </section>
-        <section class="row mt-5 mb-xxl-5 justify-content-around">
-            <div class="menu-card bg-warning shadow-lg col-3">
-            </div>
-            <div class="menu-card bg-warning shadow-lg col-3">
-            </div>
-            <div class="menu-card bg-warning shadow-lg col-3">
-            </div>
-            <div class="menu-card bg-warning shadow-lg col-3">
+
+        <section class="row justify-content-lg-evenly" id="beverages-container">
+            <!-- Beverages Section-->
+            <div class="col-12">
+                <h2
+                    class="text-warning rounded-1 text-center bg-gradient mt-3 text-uppercase font-monospace border-opacity-75 mx-5 mt-5 mb-3 varela-round-regular pt-3 pb-3 ">
+                    Beverages
+                </h2>
+                <h6 class="text-white text-end font-monospace border-opacity-75 text-decoration-underline px-5 pb-3">
+                    <a class="text-light" href="snacks.html">View All</a>
+                </h6>
             </div>
         </section>
     </div>
-    <!--<div class="card bg-warning" style="background-color: black; width: 20rem;">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div> -->
-
-    <!-- Carousel starts here -->
-    <!-- <div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="2000">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center">
-                        <img src="../images/menu-items/1st-cursol.png" class="d-block w-75" alt="First slide">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <img src="../images/menu-items/brew-bake-n-bites.png" class="d-block w-75" alt="Second slide">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <img src="../images/menu-items/1st-cursol.png" class="d-block w-75" alt="Third slide">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <div class="carousel-item">
-                <img src="../images/menu-items/1st-cursol.png" class="w-75 h-75" alt="Third slide">
-            </div>
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        </div> -->
-    <!-- Carousel ends here -->
-    <div class="hero text-light">
-        <h1>Welcome to Brew, Bake'n Bites</h1>
-        <p>Discover our delicious menu</p>
-        <a href="#menu" class="btn btn-primary">Explore Menu</a>
-    </div>
-    </section>
-
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <div class="menu-item">
-            <img src="path/to/image.jpg" alt="Item Image">
-            <h3>Item Name</h3>
-            <p>Description of the item.</p>
-            <p>Price: $X.XX</p>
-        </div>
-        <!-- Add more menu items here -->
-    </section>
-
     <footer>
         <p>Contact us at: <a href="mailto:info@cafename.com">info@cafename.com</a></p>
         <p>Follow us on:
@@ -176,6 +100,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <script src="../data-details/menu-data.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const snacksContainer = document.getElementById("snacks-container");
+                const beveragesContainer = document.getElementById("beverages-container");
+
+                function createMenuCard(item) {
+                    return `
+                    <div class="menu-card bg-black border-0 rounded-1 shadow-lg col-4 p-0 varela-round-regular">
+                        <section class="card-image rounded-1" id="${item.id}"></section>
+                        <section id="card-title" class="text-warning text-uppercase">${item.title}</section>
+                        <div class="d-flex">
+                            <section id="card-price" class="text-success">Rs. ${item.price}</section>
+                            <strong class="text-danger text-decoration-line-through">Rs. ${item.originalPrice}</strong>
+                        </div>
+                        <section id="card-description" class="text-white-50">${item.description}</section>
+                        <div class="text-warning mx-2">${item.rating}
+                            ${'<i class="bx bxs-star"></i>'.repeat(Math.floor(item.rating))}
+                            ${item.rating % 1 !== 0 ? '<i class="bx bxs-star-half"></i>' : ''}
+                            ${'<i class="bx bx-star"></i>'.repeat(5 - Math.ceil(item.rating))}
+                        </div>
+                    </div>
+                `;
+                }
+
+                menuData.snacks.forEach(item => {
+                    snacksContainer.innerHTML += createMenuCard(item);
+                });
+
+                menuData.beverages.forEach(item => {
+                    beveragesContainer.innerHTML += createMenuCard(item);
+                });
+            });
+        </script>
 </body>
 
 </html>
