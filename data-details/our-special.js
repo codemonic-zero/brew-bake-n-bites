@@ -1,4 +1,4 @@
-const menuData = {
+const ourSpecial = {
     "snacks": [
         {
             "id": "burger-1",
