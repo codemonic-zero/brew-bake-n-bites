@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.first-section {
+    background-image: url('../images/menu-items/brew-bake-n-bites.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sticky-top {
+    transition: opacity 0.5s ease;
+}
+
+.sticky-top.scrolled {
+    opacity: 1; /* Adjust the opacity as needed */
+}
+
+.d{
+    background-image: url('../images/menu-items/brew-bake-n-bites.png');
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallary-img img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 350px; /* Adjust as needed */
+    object-fit: cover; /* Ensure the image covers the area */
+    padding:30px;
+}
+.img-fluid{
+    width: 70%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
