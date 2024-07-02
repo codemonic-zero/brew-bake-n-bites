@@ -27,28 +27,31 @@
                 </div>
                 <h1 class="text-center m-3 text-warning">Login Here</h1>
                 <div class="d-flex justify-content-center align-items-center">
-                    <form class="row">
+                    <form class="row" id="loginForm">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label text-warning fs-4">Email address</label>
+                            <label for="exampleInputEmail1" class="form-label text-warning-emphasis fs-4">Email
+                                address</label>
                             <div class="col-12">
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="email"
+                                    aria-describedby="emailHelp" placeholder="example@mail.com" required>
+                                <div class="invalid-feedback" id="emailFeedback"></div>
                             </div>
-                            <div id="emailHelp" class="form-text text-warning-emphasis fs-5">We'll never share your
-                                email with anyone else.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label text-warning fs-4">Password</label>
-                            <div class="col-12">
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="exampleInputPassword1" class="form-label text-warning-emphasis fs-4">Password</label>
+                            <div class="input-group col-12">
+                                <input type="password" class="form-control" id="password" placeholder="e.g.123456" required>
+                                <span class="input-group-text" id="togglePassword">
+                                    <i class="bi bi-eye-slash" id="togglePasswordIcon"></i>
+                                </span>
+                                <div class="invalid-feedback" id="passwordFeedback"></div>
                             </div>
                         </div>
                         <div class="row d-flex">
                             <div class="col-4 mt-3">
-                                <button type="button"
+                                <button type="submit"
                                     class="btn btn-outline-success col-12 shadow-lg fs-5">Login</button>
                             </div>
-
                             <div class="col-4 mt-3">
                                 <button type="button" class="btn btn-outline-danger col-12 shadow-lg fs-5">Sign In With
                                     Google</button>
@@ -70,6 +73,61 @@
             </div>
         </section>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('loginForm');
+            const emailInput = document.getElementById('exampleInputEmail1');
+            const passwordInput = document.getElementById('exampleInputPassword1');
+            const emailFeedback = document.getElementById('emailFeedback');
+            const passwordFeedback = document.getElementById('passwordFeedback');
+
+            form.addEventListener('submit', function (event) {
+                let valid = true;
+
+                if (!emailInput.value) {
+                    valid = false;
+                    emailInput.classList.add('is-invalid');
+                    emailFeedback.textContent = 'Please enter your email.';
+                } else if (!validateEmail(emailInput.value)) {
+                    valid = false;
+                    emailInput.classList.add('is-invalid');
+                    emailFeedback.textContent = 'Please enter a valid email address.';
+                } else {
+                    emailInput.classList.remove('is-invalid');
+                }
+
+                if (!passwordInput.value) {
+                    valid = false;
+                    passwordInput.classList.add('is-invalid');
+                    passwordFeedback.textContent = 'Please enter your password.';
+                } else {
+                    passwordInput.classList.remove('is-invalid');
+                }
+
+                if (!valid) {
+                    event.preventDefault();
+                }
+            });
+
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(String(email).toLowerCase());
+            }
+            function validatePassword(password) {
+                const re = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,12}$/;
+                return re.test(password);
+            }
+        });
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            const passwordField = document.getElementById('password');
+            const passwordIcon = document.getElementById('togglePasswordIcon');
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+            passwordIcon.classList.toggle('bi-eye');
+            passwordIcon.classList.toggle('bi-eye-slash');
+        });
+    </script>
 </body>
+
 
 </html>
